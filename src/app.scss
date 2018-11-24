@@ -1,0 +1,56 @@
+@import 'normalize-scss';
+@include normalize();
+
+.App {
+  font-family: 'Fredericka the Great', cursive;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+
+  header {
+    font-size: 64px;
+    text-align: center;
+  }
+  .calculator {
+    width: 120px;
+    margin: auto;
+  }
+  .display, .button_row {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .display {
+    width: 108px;
+    height: 18px;
+    border: 1px solid #666;
+    justify-content: flex-end;
+    padding: 5px;
+  }
+  .button_row {
+    display: flex;
+    width: 120px;
+  }
+  .btn {
+    display: inline-block;
+    cursor: pointer;
+    flex-grow: 1;
+    font-family: 'Fredericka the Great', cursive;
+    height: 18px;
+    width: 18px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #666;
+
+    &.digit {
+      background-color: #0cc;
+    }
+    &.op {
+      background-color: #f84;
+    }
+    &.eq {
+      background-color: #f84;
+    }
+  }
+}
